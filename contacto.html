@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Seguridad Informática y OSINT</title>
+    <link rel="icon" href="recursos/favicon.png" type="image/png">
+    <link rel="stylesheet" href=".CSS/Styles.css">
+    <link rel="stylesheet" href=".CSS/contacto.css">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <img src="recursos/logo_spider.png" alt="Logo Seguridad OSINT" class="logo-pequeno">
+        <h1 class="titulo-principal">Contacto</h1>
+        <hr class="separador">
+    </header>
+
+    <!-- MENÚ -->
+    <nav class="menu-secundario">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="osint.html">OSINT</a>
+        <a href="cyber.html">Cybersecurity</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <hr class="separador-verde">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido">
+
+        <h2 class="titulo-verde">Formulario de contacto</h2>
+
+        <form class="formulario" method="post" action="mailto:madiazc14@educastillalamancha.es" enctype="multipart/form-data">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="tuemail@ejemplo.com" required>
+
+            <label>Conocimientos en informática:</label>
+            <div class="checkboxes">
+                <label><input type="checkbox" name="conocimiento1"> Redes</label>
+                <label><input type="checkbox" name="conocimiento2"> Seguridad</label>
+                <label><input type="checkbox" name="conocimiento3"> Linux</label>
+                <label><input type="checkbox" name="conocimiento4"> OSINT</label>
+                <label><input type="checkbox" name="conocimiento5"> Análisis forense</label>
+            </div>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="5" maxlength="110" minlength="10" placeholder="Comenta lo que quieras" required></textarea>
+
+            <div class="botones">
+                <input type="submit" value="Enviar" class="boton-enviar">
+                <input type="reset" value="Borrar" class="boton-reset">
+            </div>
+
+        </form>
+
+        <h2 class="titulo-verde">Documentación del proyecto</h2>
+        <p>Puedes <a href="recursos/ProyectoCSS.pdf" download>descargar el PDF</a> o verlo directamente aquí:</p>
+
+        <iframe src="recursos/ProyectoCSS.pdf" class="visor-pdf"></iframe>
+
+        <audio controls loop autoplay class="audio">
+            <source src="recursos/music_index.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+        </audio>
+
+    </main>
+
+    <!-- PIE -->
+    <footer class="pie">
+        <hr class="separador-verde">
+        <p>© 2025 Proyecto HTML para Lenguajes de Marcas</p>
+    </footer>
+
+</body>
+</html>

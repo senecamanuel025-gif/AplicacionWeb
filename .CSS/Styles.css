@@ -1,0 +1,110 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    text-align: center;
+}
+
+/* CABECERA */
+.cabecera {
+    padding: 20px;
+}
+
+.logo {
+    width: 400px;
+}
+
+.titulo-principal {
+    color: #33cc99;
+    margin-top: 10px;
+}
+
+.separador {
+    width: 80%;
+    height: 3px;
+    background-color: #3366cc;
+    border: none;
+    margin: 20px auto;
+}
+
+/* MENÚ PRINCIPAL */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.boton-menu {
+    text-decoration: none;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-menu img {
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.boton-menu img:hover {
+    transform: scale(1.05);
+}
+
+.boton-menu span {
+    margin-top: 8px;
+    font-family: monospace;
+}
+
+/* PIE DE PÁGINA */
+.pie {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.boton-contacto {
+    width: 200px;
+}
+
+.pie p {
+    margin-top: 10px;
+    color: #33cc99;
+}
+/* MENÚ MODERNO */
+.menu-secundario {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+    background-color: #0f0f0f; /* opcional */
+}
+
+/* BOTONES DEL MENÚ */
+.menu-secundario a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #1f1f1f;
+    border: 2px solid #3366cc;
+    transition: all 0.25s ease-in-out;
+}
+
+/* EFECTO HOVER */
+.menu-secundario a:hover {
+    background-color: #3366cc;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #3366cc;
+}
+
+/* OPCIONAL: efecto para la página activa */
+.menu-secundario a.active {
+    background-color: #33cc99;
+    border-color: #33cc99;
+    color: #1a1a1a;
+}
